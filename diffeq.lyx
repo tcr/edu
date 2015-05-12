@@ -23,7 +23,7 @@
 \font_sf_scale 100
 \font_tt_scale 100
 \graphics default
-\default_output_format html
+\default_output_format default
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -2912,6 +2912,27 @@ x'=e^{t}\left(C_{1}+C_{2}+C_{2}t\right)
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+Now working with a nonhomogeneous solution
+\end_layout
+
+\begin_layout Subsubsection
+Non-homogeneous sysstems
+\end_layout
+
+\begin_layout Standard
+Almost the same.
+\end_layout
+
+\begin_layout Standard
+We have a complicated 
+\begin_inset Formula $x'$
+\end_inset
+
+ differential.
+ Plug into (*) and see what we get (cry)
 \end_layout
 
 \begin_layout Section
