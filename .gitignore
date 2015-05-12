@@ -1,3 +1,6 @@
 *.LyXconv
 *~
-
+\#*\#
+*.tex
+*.emergency
+build/

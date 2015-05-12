@@ -23,7 +23,7 @@
 \font_sf_scale 100
 \font_tt_scale 100
 \graphics default
-\default_output_format default
+\default_output_format html
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -70,7 +70,7 @@
 \tracking_changes false
 \output_changes false
 \html_math_output 0
-\html_css_as_file 0
+\html_css_as_file 1
 \html_be_strict false
 \end_header
 
@@ -184,6 +184,10 @@ And thus, if
 \end_inset
 
 
+\end_layout
+
+\begin_layout Title
+Differential Equations
 \end_layout
 
 \begin_layout Section
@@ -2032,11 +2036,882 @@ P has zeroes at
 
 .
  Thus the lower bound is 1.
- For x_0=4, the distance on the complex plane is 
+ For 
+\begin_inset Formula $x_{0}=4$
+\end_inset
+
+, the distance on the complex plane is 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This is wrong
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-If they are constants, their dradius of convergence is infinity.
+If they are constants, their radius of convergence is infinity.
+\end_layout
+
+\begin_layout Section
+Laplace Transform
+\end_layout
+
+\begin_layout Standard
+The Laplace transform is a solution method most suited in solving equations
+ with discontinuous or impulsive forcing terms.
+\end_layout
+
+\begin_layout Standard
+The Laplace transform is one of a series of tools called 
+\series bold
+integral transforms
+\series default
+.
+ These are relations of the form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(s)=\int_{\alpha}^{\beta}K(s,t)f(t)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $K(s,t)$
+\end_inset
+
+ is a given function, called the 
+\series bold
+kernel
+\series default
+ of the transformation, and the limits of integration 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ and 
+\begin_inset Formula $\beta$
+\end_inset
+
+ are also given (though they may be 
+\begin_inset Formula $\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $-\infty$
+\end_inset
+
+).
+ The relation transforms the function 
+\begin_inset Formula $f$
+\end_inset
+
+ into 
+\begin_inset Formula $F$
+\end_inset
+
+, or the 
+\series bold
+transform
+\series default
+ of 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+From Calculus, we know an 
+\series bold
+improper integral
+\series default
+ is defined as the limit of all integrals of finite intervals over an unbounded
+ interval.
+ If an integral from 
+\begin_inset Formula $a$
+\end_inset
+
+ to 
+\begin_inset Formula $A$
+\end_inset
+
+ exists for each 
+\begin_inset Formula $A>a$
+\end_inset
+
+, and the limit of 
+\begin_inset Formula $A\rightarrow\infty$
+\end_inset
+
+, the improper integral is said to 
+\series bold
+converge
+\series default
+ to that limiting value; or otherwise, it 
+\series bold
+diverges
+\series default
+ (or fails to exist).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{a}^{\infty}f(t)dt=\lim_{A\rightarrow\infty}\int_{a}^{A}f(t)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\series bold
+Laplace transform
+\series default
+ is defined as follows: where 
+\begin_inset Formula $f(t)$
+\end_inset
+
+ is given for 
+\begin_inset Formula $t\geq0$
+\end_inset
+
+ and 
+\begin_inset Formula $f$
+\end_inset
+
+ satisfied certain conditions 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+...?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f$
+\end_inset
+
+ is piecewise continuous on the interval 
+\begin_inset Formula $0\leq t\leq A$
+\end_inset
+
+ for any positive A.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|f(t)\right|\leq Ke^{at}$
+\end_inset
+
+ when 
+\begin_inset Formula $t\geq M$
+\end_inset
+
+.
+ In this inequality, 
+\begin_inset Formula $K$
+\end_inset
+
+ and 
+\begin_inset Formula $M$
+\end_inset
+
+ are real positive constants, and 
+\begin_inset Formula $a$
+\end_inset
+
+ is a real constant.
+\end_layout
+
+\begin_layout Plain Layout
+Then the Laplace transform 
+\begin_inset Formula $\mathcal{L}\left\{ f(t)\right\} =F(s)$
+\end_inset
+
+ exists for 
+\begin_inset Formula $s>a$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+, the Laplace transform is defined by
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ f(t)\right\} =F(s)=\int_{0}^{\infty}e^{-st}f(t)dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+whenever this improper integral converges.
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+The parameter 
+\begin_inset Formula $s$
+\end_inset
+
+ may be complex.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+As solutions of linear differential equations with constant coefficients
+ are based on the exponential function, the Laplace transform is useful
+ for these equations.
+\end_layout
+
+\begin_layout Standard
+Strategy to using the Laplace transform:
+\end_layout
+
+\begin_layout Enumerate
+Use the relation to transform an IVP for an unknown function 
+\begin_inset Formula $f$
+\end_inset
+
+ in the 
+\begin_inset Formula $t$
+\end_inset
+
+-domain into the simpler, algebraic problem 
+\begin_inset Formula $F$
+\end_inset
+
+ in the 
+\begin_inset Formula $s$
+\end_inset
+
+-domain.
+\end_layout
+
+\begin_layout Enumerate
+Solve the algebraic problem to find 
+\begin_inset Formula $F$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Recover the desired function 
+\begin_inset Formula $f$
+\end_inset
+
+ from its transform 
+\begin_inset Formula $F$
+\end_inset
+
+ by 
+\begin_inset Quotes eld
+\end_inset
+
+inverting the transform
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(t)=1,\quad t\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ 1\right\} =\int_{0}^{\infty}e^{-st}dt=-\lim_{A\rightarrow\infty}\left.\frac{e^{-st}}{s}\right|_{0}^{A}=\frac{1}{s},\quad s>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+What is 
+\begin_inset Formula $-\lim_{A\rightarrow\infty}\left.\frac{e^{-st}}{s}\right|_{0}^{A}$
+\end_inset
+
+?? And does integral of 
+\begin_inset Formula $\frac{e^{-st}}{s}$
+\end_inset
+
+ yield 
+\begin_inset Formula $\frac{1}{s}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another property of Laplace transforms: if 
+\begin_inset Formula $f$
+\end_inset
+
+ is a piecewise continuous function for 
+\begin_inset Formula $t\geq a$
+\end_inset
+
+, if 
+\begin_inset Formula $\left|f(t)\right|\leq g(t)$
+\end_inset
+
+ when 
+\begin_inset Formula $t\geq M$
+\end_inset
+
+ for some positive constant 
+\begin_inset Formula $M$
+\end_inset
+
+, and if 
+\begin_inset Formula $\int_{M}^{\infty}g(t)dt$
+\end_inset
+
+ converges, then 
+\begin_inset Formula $\int_{a}^{\infty}f(t)dt$
+\end_inset
+
+ also converges.
+ On the other hand, if 
+\begin_inset Formula $f(t)\geq g(t)\geq0$
+\end_inset
+
+ for 
+\begin_inset Formula $t\geq M$
+\end_inset
+
+ , and if 
+\begin_inset Formula $\int_{M}^{\infty}g(t)dt$
+\end_inset
+
+ diverges, then 
+\begin_inset Formula $\int_{a}^{\infty}f(t)dt$
+\end_inset
+
+ also diverges.
+\end_layout
+
+\begin_layout Standard
+Example:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+f(t)=\begin{cases}
+\begin{array}{cl}
+1, & 0\leq t<1\\
+k, & t=1\\
+0, & t>1
+\end{array}\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $k$
+\end_inset
+
+ is a constant.
+ 
+\begin_inset Formula $f(t)$
+\end_inset
+
+ often refers in an engineering context to a unit pulse (perhaps of force
+ or voltage).
+ Note that 
+\begin_inset Formula $f$
+\end_inset
+
+ is a piecewise continuous function.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mathcal{L}\left\{ f(t)\right\} =\int_{0}^{\infty}e^{-st}f(t)dt=\int_{0}^{1}e^{-st}dt=-\left.\frac{e^{-st}}{s}\right|_{0}^{1}=\frac{1-e^{-s}}{s},\quad s>0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Note that 
+\begin_inset Formula $\mathcal{L}\left\{ f(t)\right\} $
+\end_inset
+
+ does not depend on 
+\begin_inset Formula $k$
+\end_inset
+
+, allowing several functions to have the same Laplace transform although
+ differing in their value at a single point.
+\end_layout
+
+\begin_layout Section*
+what
+\end_layout
+
+\begin_layout Standard
+Simple part of this class is devoted to solving simple systems of equations???
+\end_layout
+
+\begin_layout Standard
+similarities in solving these with matrices
+\end_layout
+
+\begin_layout Standard
+Solving only basic, simple systems with constant coefficients
+\end_layout
+
+\begin_layout Standard
+Lotka-Voltera
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=ax(t)+by(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dy}{dt}=cx(t)+dy(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+a,b,c,d are constants.
+ This is a linear system of differnetial equations.
+ homogeneous system.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dy}{dt}=ax+by+f(t)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\frac{dy}{dt}=cx+dy+g(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nonhomogeneous system.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+example #1.
+ solve:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=-2x+4y,x(0)=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dy}{dt}=-x+3y,y(0)=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Take eq #2, 
+\begin_inset Formula 
+\[
+x=\frac{-dy}{dt}+3y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Call this eqation (*).
+ We separated x and y.
+ Apply 
+\begin_inset Formula $\frac{d}{\ensuremath{dt}}$
+\end_inset
+
+ to both sides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dx}{dt}=-\frac{d^{2}y}{dt^{2}}+3\frac{dy}{dt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plug this into the first equation.
+ We don't pay attention to the IVP until we have C and C2.
+ Solving it generally for now.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\frac{d^{2}y}{dt^{2}}+3\frac{dy}{dt}=-2(-\frac{dy}{dt}+3y)+4y
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can re-express this as a diffeq:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''-y'-2y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This is faimilar! Let's write the characteristic eq
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}-r-2=0
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+r_{1}=2,r_{2}=-1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Roots
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=C_{1}e^{2t}+C_{2}e^{-t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Yeah! Now let's find 
+\begin_inset Formula $x(t)$
+\end_inset
+
+ .
+ We see the (*) equation, let's solve for it.
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Formula $-\frac{dy}{dt}$
+\end_inset
+
+? Differnetiate 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y'=2C_{1}e^{2t}-C_{2}e^{-t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plug it in
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & -2C_{1}e^{2t}+C_{2}e^{-t}+3\left(C_{1}e^{2t}+C_{2}e^{-t}\right)\\
+ & = & C_{1}e^{2t}+4C_{2}e^{-t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+General answer
+\begin_inset Formula 
+\begin{eqnarray*}
+x & = & C_{1}e^{2t}+4C_{2}e^{-t}\\
+y & = & C_{1}e^{2t}+C_{2}e^{-t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Can solve for the starting points
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+3 & = & C_{1}+4C_{2}\\
+4 & = & C_{1}+C_{2}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve for it yields
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+C_{1} & = & \frac{13}{3}\\
+C_{2} & = & -\frac{1}{3}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And we'll do another one.
+\end_layout
+
+\begin_layout Subsubsection
+example 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\begin{cases}
+x'=3x-y & x(0)=5\\
+y'=4x-y & y(0)=8
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Separate x and y.
+ Apply 
+\begin_inset Formula $\frac{d}{dt}$
+\end_inset
+
+ to both sides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & 3x-\frac{dx}{dt}\\
+\frac{dy}{dt} & = & 3\frac{dx}{dt}-\frac{dx^{2}}{d^{2}t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can now plug this into our other equation.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dy}{dt} & = & 4x-\left(3x-\frac{dx}{dt}\right)=3\frac{dx}{dt}-\frac{dx^{2}}{d^{2}t}\\
+ &  & \frac{dx^{2}}{d^{2t}}-2\frac{dx}{dt}+x=0\\
+ &  & x''-2x'+x=0
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Familiar! Roots
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}-2r+1=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=1,r=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=e^{t}\left(C_{1}+C_{2}t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x'=e^{t}\left(C_{1}+C_{2}t\right)+e^{t}C_{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x'=e^{t}\left(C_{1}+C_{2}+C_{2}t\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
