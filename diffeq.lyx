@@ -187,120 +187,6 @@ And thus, if
 \end_layout
 
 \begin_layout Section
-Trig
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sin y=\frac{1}{\csc u}\qquad\cos u=\frac{1}{\sec u}\qquad\tan u=\frac{1}{\cot u}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\csc u=\frac{1}{\sin u}\qquad\sec u=\frac{1}{\cos u}\qquad\cot u=\frac{1}{\tan u}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sin^{2}u+\cos^{2}u=1\qquad1+\tan^{2}u=\sec^{2}u\qquad1+\cot^{2}u=\csc^{2}u
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\tan u=\frac{\sin u}{\cos u}\qquad\cot u=\frac{\cos u}{\sin u}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sin\left(\frac{\pi}{2}-u\right)=\cos u\qquad\cos\left(\frac{\pi}{2}-u\right)=\sin u\qquad\tan\left(\frac{\pi}{2}-u\right)=\cot u
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\csc\left(\frac{\pi}{2}-u\right)=\sec u\qquad\sec\left(\frac{\pi}{2}-u\right)=\csc u\qquad\cot\left(\frac{\pi}{2}-u\right)=\tan u
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sin\left(2u\right)=2\sin u\cos u
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\cos\left(2u\right)=\cos^{2}u-\sin^{2}u=2\cos^{2}u-1=1-2\sin^{2}u
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\tan(2u)=\frac{2\tan u}{1-\tan^{2}u}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sin^{2}u=\frac{1-\cos(2u)}{2}\qquad\cos^{2}u=\frac{1+\cos(2u)}{2}\qquad\tan^{2}u=\frac{1-\cos(2u)}{1+\cos(2u)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Section
 Reminders
 \end_layout
 
@@ -1448,7 +1334,830 @@ y=\frac{x^{7}}{6}+c_{1}x+c_{2}x^{3}
 
 \end_layout
 
+\begin_layout Section*
+More notes
+\end_layout
+
+\begin_layout Standard
+Ratio test
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}\left(x-x_{0}\right)^{n+1}}{a_{n}\left(x-x_{0}\right)^{n}}\right|=\left|x-x_{0}\right|\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\left|x-x_{0}\right|L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Converges if 
+\begin_inset Formula $\left|x-x_{0}\right|L<1$
+\end_inset
+
+ and diverges 
+\begin_inset Formula $\left|x-x_{0}\right|L>1$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left|x-x_{0}\right|L=1$
+\end_inset
+
+, the test is inconclusive.
+\end_layout
+
+\begin_layout Section*
+Series Solutions Near an Ordinary Point
+\end_layout
+
+\begin_layout Standard
+Question: how do you take the derivative of a sum? Differentiate the terms.
+ This shifts the index up by one.
+ Note Taking the derivative of a power series does not change its radius
+ of convergence.
+\end_layout
+
+\begin_layout Subsection*
+A problem
+\end_layout
+
+\begin_layout Standard
+Starting with 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(5+x^{2}\right)y''-xy'+10y=0,\quad x_{0}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Seek power series solutions of the given differential equation about the
+ given point.
+\end_layout
+
+\begin_layout Standard
+Start with the following.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+\ldots=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y'=\sum_{n=1}^{\infty}na_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=2}^{\infty}n(n-1)a_{n}x^{n-2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Directly substitute these in.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(5+x^{2}\right)\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}-x\sum_{n=1}^{\infty}na_{n}x^{n-1}+10\sum_{n=0}^{\infty}a_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distribut the multiplication.
+ For terms involving 
+\begin_inset Formula $x$
+\end_inset
+
+, you'll find this increases the indexes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}5n\left(n-1\right)a_{n}x^{n-2}+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n}-\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}10a_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Change indices to obtain the term 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ in each sum.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}5(n+2)\left(n+1\right)a_{n+2}\mathbf{x^{n}}+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n}-\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}10a_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now make all the sums start in the same point.
+ Match the highest starting point, 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ We don't want to change the 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ term, so expand the terms that drop out:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+5(0+2)\left(0+1\right)a_{2}x^{0}+5(1+2)(1+1)a_{3}x^{1}-(1)a_{1}x^{1}+10a_{0}x^{0}+10a_{1}x^{1}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10a_{2}+30a_{3}x-a_{1}x+10a_{0}+10a_{1}x=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10a_{0}+9a_{1}x+10a_{2}+30a_{3}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the summed terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}(5(n+2)\left(n+1\right)a_{n+2}+n\left(n-1\right)a_{n}-na_{n}+10a_{n})x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Added together yield 0.
+\end_layout
+
+\begin_layout Standard
+Consider the terms in our summation.
+ For this equation to be satisfied for all x, the coefficient of each power
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ must be zero:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+5(n+2)(n+1)a_{n+2}+n(n-1)a_{n}-na_{n}+10a_{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want to find the 
+\series bold
+recurrence relation
+\series default
+, how to express our coefficients in terms of prior coefficients.
+ Here it means what 
+\begin_inset Formula $a_{n+2}$
+\end_inset
+
+ means in terms of 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n+2}=-\frac{\left(n(n-1)-n+10\right)a_{n}}{5(n+2)(n+1)}=-\frac{\left(n2-2n+10\right)a_{n}}{5(n+2)(n+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that indices in your recurrence relation differ by two.
+ This means that to find two linearly independent solutions one will correspond
+ to odd indices and the other will correspond to even indices.
+ Let 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ be the solution corresponding to the even powers of 
+\begin_inset Formula $x$
+\end_inset
+
+ and with 
+\begin_inset Formula $a_{0}=1$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ be the solution corresponding to the odd powers of 
+\begin_inset Formula $x$
+\end_inset
+
+ and with 
+\begin_inset Formula $a_{1}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}(x)=a_{0}x^{0}+a_{2}x^{2}+a_{4}x^{4}+a_{6}x^{6}+\ldots=1-x^{2}+\frac{x^{4}}{6}-\frac{x^{6}}{50}+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{2}(x)=a_{1}x^{1}+a_{3}x^{3}+a_{5}x^{5}+a_{7}x^{7}+\ldots=x-\frac{3x^{3}}{10}+\frac{39x^{5}}{1000}-\frac{13x^{7}}{2800}+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sub in 
+\begin_inset Formula $2k$
+\end_inset
+
+ and 
+\begin_inset Formula $2k+1$
+\end_inset
+
+ for the term 
+\begin_inset Formula $n$
+\end_inset
+
+ in our recurrence relation to find the even and odd terms.
+ (This allows us to find a term 
+\begin_inset Formula $(-1)^{k}$
+\end_inset
+
+ that permits alternating signs.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{2k+2}=-\frac{\left(4k^{2}-4k+10\right)a_{2k}}{5\left(2k+1\right)\left(2k+2\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{2k+3}=-\frac{\left(\left(2k+1\right)k^{2}-4k+8\right)a_{2k+1}}{5\left(2k+2\right)\left(2k+3\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=a_{0}\sum_{k=0}^{\infty}a_{2k}x^{2k}+a_{1}\sum_{k=0}^{\infty}a_{2k+1}x^{2k+1}
+\]
+
+\end_inset
+
+Cool.
+\end_layout
+
+\begin_layout Subsection*
+phi time
+\end_layout
+
+\begin_layout Standard
+okay
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m!a_{m}=φ^{(m)}(x_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then a0 = y0 and a1 = y′0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{x}{1}\qquad q(x)=\frac{1}{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi''(0)=2!a_{2}=-p(x_{0})a_{1}-q(x_{0})a_{0}=-0(0)-1(6)=-6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi'''(0)=3!a_{3}=\text{−}2!p(x_{0})a_{2}\text{−}[p\text{′}(x_{0})+q(x_{0})]a_{1}\text{−}q\text{′}(x_{0})a_{0}=-(2)(1)(0)-(1+1)(0)-0(6)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+φ^{(4)}(x)=\text{−}[pφ''+(p'+q)φ'+q'φ]=-(p'\phi''+p\phi'''+p''\phi'+p'\phi''+q'\phi'+q\phi''+q''\phi+q'\phi') 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-(\phi(q'')+\phi'(p''+q'+q')+\phi''(p'+p'+q)+\phi'''(p))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-(3\phi''+x\phi''')=-3(-6)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Series Solutions Bounds
+\end_layout
+
+\begin_layout Standard
+ok
+\end_layout
+
+\begin_layout Standard
+Determine a lower bound for the radius of convergence of series solutions
+ about each given point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ for the given differential equation.
+ (Enter 
+\begin_inset Formula $∞$
+\end_inset
+
+ if the series solutions converge everywhere.) 
+\begin_inset Formula $xy''+y=0$
+\end_inset
+
+; 
+\begin_inset Formula $x_{0}=3$
+\end_inset
+
+ lower bound for 
+\begin_inset Formula $x_{0}=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(x)y''+Q(x)y'+R(x)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+needs to be transformed into the equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+p(x)y'+q(x)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{Q(x)}{P(x)}\quad and\quad q(x)=\frac{R(x)}{P(x)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Formula $p(x)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{0}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The series converges everywhere, so the radius of convergence is 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Formula $q(x)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q(x)=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $x-x_{0}$
+\end_inset
+
+ yields 0 exists the radius of convergence, thus 4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{min}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another one:
+\end_layout
+
+\begin_layout Standard
+Determine a lower bound for the radius of convergence of series solutions
+ about each given point x0 for the given differential equation.
+ (Enter ∞ if the series solutions converge everywhere.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(1+x^{3})y''+4xy'+y=0\qquad x_{0}=0,x_{0}=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{4x}{(1+x^{3})}\qquad q(x)=\frac{1}{(1+x^{3})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And their radii at 
+\begin_inset Formula $x=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1\qquad1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P has zeroes at 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=\frac{1}{2}+\frac{\sqrt{3}}{2}i$
+\end_inset
+
+.
+ The distance in the complex plane is 1, and for 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ to 
+\begin_inset Formula $-1$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Thus the lower bound is 1.
+ For x_0=4, the distance on the complex plane is 
+\end_layout
+
+\begin_layout Standard
+If they are constants, their dradius of convergence is infinity.
+\end_layout
+
 \begin_layout Section
+References
+\end_layout
+
+\begin_layout Subsection*
+Trigonometric Reference
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin y=\frac{1}{\csc u}\qquad\cos u=\frac{1}{\sec u}\qquad\tan u=\frac{1}{\cot u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc u=\frac{1}{\sin u}\qquad\sec u=\frac{1}{\cos u}\qquad\cot u=\frac{1}{\tan u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{2}u+\cos^{2}u=1\qquad1+\tan^{2}u=\sec^{2}u\qquad1+\cot^{2}u=\csc^{2}u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan u=\frac{\sin u}{\cos u}\qquad\cot u=\frac{\cos u}{\sin u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin\left(\frac{\pi}{2}-u\right)=\cos u\qquad\cos\left(\frac{\pi}{2}-u\right)=\sin u\qquad\tan\left(\frac{\pi}{2}-u\right)=\cot u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc\left(\frac{\pi}{2}-u\right)=\sec u\qquad\sec\left(\frac{\pi}{2}-u\right)=\csc u\qquad\cot\left(\frac{\pi}{2}-u\right)=\tan u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin\left(2u\right)=2\sin u\cos u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\left(2u\right)=\cos^{2}u-\sin^{2}u=2\cos^{2}u-1=1-2\sin^{2}u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan(2u)=\frac{2\tan u}{1-\tan^{2}u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{2}u=\frac{1-\cos(2u)}{2}\qquad\cos^{2}u=\frac{1+\cos(2u)}{2}\qquad\tan^{2}u=\frac{1-\cos(2u)}{1+\cos(2u)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
 Undetermined Coefficients Chart
 \end_layout
 
@@ -3202,711 +3911,6 @@ The way partial solution looks
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section*
-More notes
-\end_layout
-
-\begin_layout Standard
-Ratio test
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}\left(x-x_{0}\right)^{n+1}}{a_{n}\left(x-x_{0}\right)^{n}}\right|=\left|x-x_{0}\right|\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\left|x-x_{0}\right|L
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Converges if 
-\begin_inset Formula $\left|x-x_{0}\right|L<1$
-\end_inset
-
- and diverges 
-\begin_inset Formula $\left|x-x_{0}\right|L>1$
-\end_inset
-
-.
- If 
-\begin_inset Formula $\left|x-x_{0}\right|L=1$
-\end_inset
-
-, the test is inconclusive.
-\end_layout
-
-\begin_layout Section*
-Series Solutions Near an Ordinary Point
-\end_layout
-
-\begin_layout Standard
-Question: how do you take the derivative of a sum? Differentiate the terms.
- This shifts the index up by one.
- Note Taking the derivative of a power series does not change its radius
- of convergence.
-\end_layout
-
-\begin_layout Subsection*
-A problem
-\end_layout
-
-\begin_layout Standard
-Starting with 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\left(5+x^{2}\right)y''-xy'+10y=0,\quad x_{0}=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Seek power series solutions of the given differential equation about the
- given point.
-\end_layout
-
-\begin_layout Standard
-Start with the following.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-y=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+\ldots=\sum_{n=0}^{\infty}a_{n}x^{n}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-y'=\sum_{n=1}^{\infty}na_{n}x^{n-1}
-\]
-
-\end_inset
-
-
-\begin_inset Formula 
-\[
-y''=\sum_{n=2}^{\infty}n(n-1)a_{n}x^{n-2}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Directly substitute these in.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\left(5+x^{2}\right)\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}-x\sum_{n=1}^{\infty}na_{n}x^{n-1}+10\sum_{n=0}^{\infty}a_{n}x^{n}=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Distribut the multiplication.
- For terms involving 
-\begin_inset Formula $x$
-\end_inset
-
-, you'll find this increases the indexes.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{n=2}^{\infty}5n\left(n-1\right)a_{n}x^{n-2}+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n}-\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}10a_{n}x^{n}=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Change indices to obtain the term 
-\begin_inset Formula $x^{n}$
-\end_inset
-
- in each sum.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{n=0}^{\infty}5(n+2)\left(n+1\right)a_{n+2}\mathbf{x^{n}}+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n}-\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}10a_{n}x^{n}=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Now make all the sums start in the same point.
- Match the highest starting point, 
-\begin_inset Formula $n=2$
-\end_inset
-
-.
- We don't want to change the 
-\begin_inset Formula $x^{n}$
-\end_inset
-
- term, so expand the terms that drop out:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-5(0+2)\left(0+1\right)a_{2}x^{0}+5(1+2)(1+1)a_{3}x^{1}-(1)a_{1}x^{1}+10a_{0}x^{0}+10a_{1}x^{1}=
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-10a_{2}+30a_{3}x-a_{1}x+10a_{0}+10a_{1}x=
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-10a_{0}+9a_{1}x+10a_{2}+30a_{3}x
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-And the summed terms:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\sum_{n=2}^{\infty}(5(n+2)\left(n+1\right)a_{n+2}+n\left(n-1\right)a_{n}-na_{n}+10a_{n})x^{n}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Added together yield 0.
-\end_layout
-
-\begin_layout Standard
-Consider the terms in our summation.
- For this equation to be satisfied for all x, the coefficient of each power
- of 
-\begin_inset Formula $x$
-\end_inset
-
- must be zero:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-5(n+2)(n+1)a_{n+2}+n(n-1)a_{n}-na_{n}+10a_{n}=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-We want to find the 
-\series bold
-recurrence relation
-\series default
-, how to express our coefficients in terms of prior coefficients.
- Here it means what 
-\begin_inset Formula $a_{n+2}$
-\end_inset
-
- means in terms of 
-\begin_inset Formula $a_{n}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-a_{n+2}=-\frac{\left(n(n-1)-n+10\right)a_{n}}{5(n+2)(n+1)}=-\frac{\left(n2-2n+10\right)a_{n}}{5(n+2)(n+1)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Notice that indices in your recurrence relation differ by two.
- This means that to find two linearly independent solutions one will correspond
- to odd indices and the other will correspond to even indices.
- Let 
-\begin_inset Formula $y_{1}$
-\end_inset
-
- be the solution corresponding to the even powers of 
-\begin_inset Formula $x$
-\end_inset
-
- and with 
-\begin_inset Formula $a_{0}=1$
-\end_inset
-
-.
- Let 
-\begin_inset Formula $y_{2}$
-\end_inset
-
- be the solution corresponding to the odd powers of 
-\begin_inset Formula $x$
-\end_inset
-
- and with 
-\begin_inset Formula $a_{1}=1$
-\end_inset
-
-.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-y_{1}(x)=a_{0}x^{0}+a_{2}x^{2}+a_{4}x^{4}+a_{6}x^{6}+\ldots=1-x^{2}+\frac{x^{4}}{6}-\frac{x^{6}}{50}+\ldots
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-y_{2}(x)=a_{1}x^{1}+a_{3}x^{3}+a_{5}x^{5}+a_{7}x^{7}+\ldots=x-\frac{3x^{3}}{10}+\frac{39x^{5}}{1000}-\frac{13x^{7}}{2800}+\ldots
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Sub in 
-\begin_inset Formula $2k$
-\end_inset
-
- and 
-\begin_inset Formula $2k+1$
-\end_inset
-
- for the term 
-\begin_inset Formula $n$
-\end_inset
-
- in our recurrence relation to find the even and odd terms.
- (This allows us to find a term 
-\begin_inset Formula $(-1)^{k}$
-\end_inset
-
- that permits alternating signs.)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-a_{2k+2}=-\frac{\left(4k^{2}-4k+10\right)a_{2k}}{5\left(2k+1\right)\left(2k+2\right)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-a_{2k+3}=-\frac{\left(\left(2k+1\right)k^{2}-4k+8\right)a_{2k+1}}{5\left(2k+2\right)\left(2k+3\right)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-y=a_{0}\sum_{k=0}^{\infty}a_{2k}x^{2k}+a_{1}\sum_{k=0}^{\infty}a_{2k+1}x^{2k+1}
-\]
-
-\end_inset
-
-Cool.
-\end_layout
-
-\begin_layout Subsection*
-phi time
-\end_layout
-
-\begin_layout Standard
-okay
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-m!a_{m}=φ^{(m)}(x_{0})
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Then a0 = y0 and a1 = y′0.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p(x)=\frac{x}{1}\qquad q(x)=\frac{1}{1}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\phi''(0)=2!a_{2}=-p(x_{0})a_{1}-q(x_{0})a_{0}=-0(0)-1(6)=-6
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\phi'''(0)=3!a_{3}=\text{−}2!p(x_{0})a_{2}\text{−}[p\text{′}(x_{0})+q(x_{0})]a_{1}\text{−}q\text{′}(x_{0})a_{0}=-(2)(1)(0)-(1+1)(0)-0(6)=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-φ^{(4)}(x)=\text{−}[pφ''+(p'+q)φ'+q'φ]=-(p'\phi''+p\phi'''+p''\phi'+p'\phi''+q'\phi'+q\phi''+q''\phi+q'\phi') 
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-=-(\phi(q'')+\phi'(p''+q'+q')+\phi''(p'+p'+q)+\phi'''(p))
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-=-(3\phi''+x\phi''')=-3(-6)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Subsection*
-Series Solutions Bounds
-\end_layout
-
-\begin_layout Standard
-ok
-\end_layout
-
-\begin_layout Standard
-Determine a lower bound for the radius of convergence of series solutions
- about each given point 
-\begin_inset Formula $x_{0}$
-\end_inset
-
- for the given differential equation.
- (Enter 
-\begin_inset Formula $∞$
-\end_inset
-
- if the series solutions converge everywhere.) 
-\begin_inset Formula $xy''+y=0$
-\end_inset
-
-; 
-\begin_inset Formula $x_{0}=3$
-\end_inset
-
- lower bound for 
-\begin_inset Formula $x_{0}=3$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-P(x)y''+Q(x)y'+R(x)y=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-needs to be transformed into the equation
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-y''+p(x)y'+q(x)y=0
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p(x)=\frac{Q(x)}{P(x)}\quad and\quad q(x)=\frac{R(x)}{P(x)}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-What is 
-\begin_inset Formula $p(x)$
-\end_inset
-
-?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p(x)=\frac{0}{x}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The series converges everywhere, so the radius of convergence is 
-\begin_inset Formula $\infty$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-What is 
-\begin_inset Formula $q(x)$
-\end_inset
-
-?
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-q(x)=\frac{1}{x}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Where 
-\begin_inset Formula $x-x_{0}$
-\end_inset
-
- yields 0 exists the radius of convergence, thus 4.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p_{min}=4
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Another one:
-\end_layout
-
-\begin_layout Standard
-Determine a lower bound for the radius of convergence of series solutions
- about each given point x0 for the given differential equation.
- (Enter ∞ if the series solutions converge everywhere.)
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-(1+x^{3})y''+4xy'+y=0\qquad x_{0}=0,x_{0}=3
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-So 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-p(x)=\frac{4x}{(1+x^{3})}\qquad q(x)=\frac{1}{(1+x^{3})}
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-And their radii at 
-\begin_inset Formula $x=0$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-1\qquad1
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-P has zeroes at 
-\begin_inset Formula $x=-1$
-\end_inset
-
- and 
-\begin_inset Formula $x=\frac{1}{2}+\frac{\sqrt{3}}{2}i$
-\end_inset
-
-.
- The distance in the complex plane is 1, and for 
-\begin_inset Formula $x_{0}=0$
-\end_inset
-
- to 
-\begin_inset Formula $-1$
-\end_inset
-
- is 
-\begin_inset Formula $1$
-\end_inset
-
-.
- Thus the lower bound is 1.
- For x_0=4, the distance on the complex plane is 
-\end_layout
-
-\begin_layout Standard
-If they are constants, their dradius of convergence is infinity.
 \end_layout
 
 \begin_layout Subsection*
