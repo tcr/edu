@@ -1,0 +1,4628 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass extarticle
+\begin_preamble
+\usepackage{multicol} 
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+begin{multicols}{2}{
+\backslash
+fontsize{5pt}{7pt}
+\backslash
+selectfont
+\end_layout
+
+\begin_layout Plain Layout
+Test is on 3.5 and 3.6
+\end_layout
+
+\begin_layout Plain Layout
+Notes are from 4-7-2015 and 4-9-2015
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Determine the radius of convergence of the given power series:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\stackrel[n=0]{\infty}{\sum}(x-3)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+We know it will converge for 
+\begin_inset Formula $x=3$
+\end_inset
+
+, but that's it.
+ Next, let's apply the test we choose to work with.
+\end_layout
+
+\begin_layout Plain Layout
+First let's use the ratio test.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+L=\lim_{n\rightarrow\infty}\frac{\text{\left|A_{n+1}\right|}}{\left|A_{n}\right|}=\lim_{n\rightarrow\infty}\left|\frac{(x-3)^{n+1}}{(x-3)^{n}}\right|=\lim_{n\rightarrow\infty}\left|(x-3)\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+ is not dependent, so we can factor it out of the limit.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+L=\left|x-3\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+And thus, if 
+\begin_inset Formula $\left|x-3\right|<1$
+\end_inset
+
+ we know the series converges, and 
+\begin_inset Formula $\left|x-3\right|>1$
+\end_inset
+
+ we know it diverges.
+ The radius for this power series is thus 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Trig
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin y=\frac{1}{\csc u}\qquad\cos u=\frac{1}{\sec u}\qquad\tan u=\frac{1}{\cot u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc u=\frac{1}{\sin u}\qquad\sec u=\frac{1}{\cos u}\qquad\cot u=\frac{1}{\tan u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{2}u+\cos^{2}u=1\qquad1+\tan^{2}u=\sec^{2}u\qquad1+\cot^{2}u=\csc^{2}u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan u=\frac{\sin u}{\cos u}\qquad\cot u=\frac{\cos u}{\sin u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin\left(\frac{\pi}{2}-u\right)=\cos u\qquad\cos\left(\frac{\pi}{2}-u\right)=\sin u\qquad\tan\left(\frac{\pi}{2}-u\right)=\cot u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\csc\left(\frac{\pi}{2}-u\right)=\sec u\qquad\sec\left(\frac{\pi}{2}-u\right)=\csc u\qquad\cot\left(\frac{\pi}{2}-u\right)=\tan u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin\left(2u\right)=2\sin u\cos u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\cos\left(2u\right)=\cos^{2}u-\sin^{2}u=2\cos^{2}u-1=1-2\sin^{2}u
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\tan(2u)=\frac{2\tan u}{1-\tan^{2}u}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin^{2}u=\frac{1-\cos(2u)}{2}\qquad\cos^{2}u=\frac{1+\cos(2u)}{2}\qquad\tan^{2}u=\frac{1-\cos(2u)}{1+\cos(2u)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Reminders
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Untitled.png
+	width 4cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{d}{dx}(3g(x))=3g'(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align center
+
+\series bold
+PAY ATTENTION TO THE 
+\begin_inset Formula $'$
+\end_inset
+
+ COUNT!
+\begin_inset Newline newline
+\end_inset
+
+SPELL OUT 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ and 
+\begin_inset Formula $\mu$
+\end_inset
+
+ ASSUMPTIONS
+\begin_inset Newline newline
+\end_inset
+
+ALSO BOX YOUR RESULTS
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y1(t)v''+[2y'1(t)+p(t)y1(t)]v'=g(t).$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=v(t)y1(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+General Solution
+\end_layout
+
+\begin_layout Standard
+For an equation that can be expressed as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+L(y)=y''+p(t)y'+q(t)y=g(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the equation is homogenous (that is, 
+\begin_inset Formula $g(t)=0$
+\end_inset
+
+) and exists two real roots:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=c_{1}e^{r_{1}t}+c_{2}e^{r_{2}t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the roots are complex, it can be solved for as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lambda\pm\mu i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=c_{1}e^{\lambda t}\cos\mu t+c_{2}e^{\lambda t}\sin\mu t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Repeated Roots
+\end_layout
+
+\begin_layout Standard
+Solving for the equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ay''+by'+cy=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Yields the roots of the characteristic equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ar^{2}+br+c=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If we find that 
+\begin_inset Formula $r_{1}=r_{2}$
+\end_inset
+
+, we result in the solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r_{1}=r_{2}=\frac{-b}{2a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Which only yields one solution,
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}(t)=e^{-bt/2a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Following a formula, we discover this is true:
+\begin_inset Formula 
+\[
+y_{2}(t)=te^{-bt/2a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And thus a general solution:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y(t)=c_{1}e^{rt}+tc_{2}e^{rt}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Reduction of Order
+\end_layout
+
+\begin_layout Standard
+If a problem has non-constant coefficients, but we know one solution:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t^{2}y''-4ty'+6y=0\qquad y_{1}=t^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Use the method of reduction of order to find another solution.
+ A solution will fulfill:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{2}(t)=v(t)y_{1}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the derivatives for these solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}(t)=t^{2}\qquad y_{1}'(t)=2t\qquad y_{1}'(t)=2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{2}(t)=t^{2}v\qquad y_{2}'(t)=2tv+t^{2}v'\qquad y_{2}''(t)=2v+4tv'+t^{2}v''
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plug these in:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t^{2}(2v+4tv'+t^{2}v'')-4t(2tv+t^{2}v')+6(t^{2}v)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2t^{2}v+4t^{3}v'+t^{4}v''-8t^{2}v-4t^{3}v'+6t^{2}v=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t^{4}v''-4t^{3}v'+4t^{3}v'+2t^{2}v-8t^{2}v+6t^{2}v=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t^{4}v''=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The term 
+\begin_inset Formula $v$
+\end_inset
+
+, discounting derivatives, 
+\emph on
+has dropped out
+\emph default
+.
+ Next, make the following 
+\series bold
+change of variable
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w=v'\qquad\Rightarrow\qquad w'=v''
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t^{4}w'=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We can solve this using 
+\series bold
+separation
+\series default
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t^{4}\frac{dw}{dt}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+dw=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+w=C
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lastly, find 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v=\int w=C\int dt=Ct
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{2}(t)=(Ct)(t^{2})=Ct^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Theorem of Undetermined Coefficients
+\end_layout
+
+\begin_layout Subsection*
+Theorem 3.5.1
+\end_layout
+
+\begin_layout Standard
+If 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{2}$
+\end_inset
+
+ are two solutions of the nonhomogeneous equation (1), then their difference
+ 
+\begin_inset Formula $Y_{1}−Y_{2}$
+\end_inset
+
+ is a solution of the corresponding homogeneous equation (2).
+ If, in addition, 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ are a fundamental set of solutions of Eq.
+ (2), then
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{1}\left(t\right)-Y_{2}\left(t\right)=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ are certain constants.
+\end_layout
+
+\begin_layout Subsection*
+Theorem 3.5.2
+\end_layout
+
+\begin_layout Standard
+The general solution of the nonhomogeneous equation (1) can be written in
+ the form
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\varPhi\left(t\right)=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left(t\right)+Y\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ are a fundamental set of solutions of the corresponding homoge- neous equation
+ (2), 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $c_{2}$
+\end_inset
+
+ are arbitrary constants, and 
+\begin_inset Formula $Y$
+\end_inset
+
+ is some specific solution of the nonhomogeneous equation (1).
+\end_layout
+
+\begin_layout Section
+Method of Undetermined Coefficients
+\end_layout
+
+\begin_layout Standard
+Given the equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+2y'+5y=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find its fundamental solutions:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r^{2}+2r+5=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+r=-1\pm2i
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=e^{-t}(\cos2t+\sin2t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Next, pattern matching against the right term 
+\begin_inset Formula $3\sin2t$
+\end_inset
+
+, assume there is a particular solution.
+ Then derivate:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=A\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y'=2A\cos2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y''=-4A\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Attempt to solve for the equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(-4A\sin2t)+2(2A\cos2t)+5(A\sin2t)=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-4A\sin2t+4A\cos2t+5A\sin2t=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A\sin2t+4A\cos2t=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+...
+ Since we can't solve for the cosine term, let's try again, but involve
+ it:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=A\sin2t+B\cos2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y'=2A\cos2t-2B\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y''=-4A\sin2t-4B\cos2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Attempt to solve for the equation:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(-4A\sin2t-4B\cos2t)+2(2A\cos2t-2B\sin2t)+5(A\sin2t+B\cos2t)=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-4A\sin2t-4B\cos2t+4A\cos2t-4B\sin2t+5A\sin2t+5B\cos2t=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sin2t(A-4B)+\cos2t(B+4A)=3\sin2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+A-4B=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+4A+B=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solving for this system yields 
+\begin_inset Formula $A=\frac{3}{17}$
+\end_inset
+
+ and 
+\begin_inset Formula $B=\frac{12}{17}$
+\end_inset
+
+.
+ Solving for the general solution:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y=\frac{3}{17}\sin2t-\frac{12}{17}\cos2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=c_{1}e^{-t}\cos2t+c_{2}e^{-t}\sin2t+\frac{3}{17}\sin2t-\frac{12}{17}\cos2t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Theorem of Variation of Parameters
+\end_layout
+
+\begin_layout Subsection*
+Theorem 3.6.1
+\end_layout
+
+\begin_layout Standard
+If the functions p, q, and g are continuous on an open interval 
+\begin_inset Formula $I$
+\end_inset
+
+, and if the functions 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ are a fundamental set of solutions of the homogeneous equation (18) correspondi
+ng to the nonhomogeneous equation (16)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+p\left(t\right)y'+q\left(t\right)y=g\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+then a particular solution of Eq.
+ (16) is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y(t)=-y_{1}(t)\int_{t_{0}}^{t}\frac{y_{2}\left(s\right)g\left(s\right)}{W\left(y_{1},y_{2}\right)\left(s\right)}ds+y_{2}\left(t\right)\int_{t_{0}}^{t}\frac{y_{1}\left(s\right)g\left(s\right)}{W\left(y_{1},y_{2}\right)\left(s\right)}ds
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+where 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ is any conveniently chosen point in 
+\begin_inset Formula $I$
+\end_inset
+
+.
+ The general solution is
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left(t\right)+Y(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+as prescribed by Theorem 3.5.2.
+\end_layout
+
+\begin_layout Subsection
+Particular solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Y_{P}(t)=-y_{1}\int\frac{y_{2}g(t)}{W\mbox{\left(y_{1},y_{2}\right)}}dt+y_{2}\int\frac{y_{1}g(t)}{W\left(y_{1},y_{2}\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}=\int\frac{-y_{2}g}{W(y_{1},y_{2})}dt\qquad v_{2}=\int\frac{y_{1}g}{W(y_{1},y_{2})}dt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Variations of Parameters
+\end_layout
+
+\begin_layout Standard
+Given that 
+\begin_inset Formula $\left\{ x,x^{3}\right\} $
+\end_inset
+
+ is a fundamental set of solutions of:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}y''-3xy'+3y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the general solution of:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x^{2}y''-3xy'+3y=4x^{7}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Find the correct form:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''-3y'x^{-1}+3yx^{-2}=4x^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve the system of equations:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}'y_{1}+v_{2}'y_{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}'y_{1}'+v_{2}'y_{2}'=f
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve with our system (
+\begin_inset Formula $y_{1}=x$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}=x^{3}$
+\end_inset
+
+):
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}'x+v_{2}'x^{3}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}'(1)+v_{2}'(3x^{2})=4x^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Try substitution:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}'=-2x^{5}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{2}'=2x^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculate integrals of 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{1}=\frac{-x^{6}}{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v_{2}=\frac{x^{4}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus we get the 
+\series bold
+particular solution
+\series default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\frac{-x^{7}}{3}+\frac{x^{7}}{2}=\frac{x^{7}}{6}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And to get the 
+\series bold
+general solution
+\series default
+ we take our particular solution and add the solutions from our fundamental
+ set, multiplied by some generic coefficients:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=\frac{x^{7}}{6}+c_{1}x+c_{2}x^{3}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Undetermined Coefficients Chart
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="39" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Right part
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Roots
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+The way partial solution looks
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=6$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=3x-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ax+B$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=x^{2}-x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ax^{2}+Bx+C$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ax^{3}+Bx^{2}+Cx+D$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2e^{3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}\text{ or }r_{2}\neq3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ae^{3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\left(2x-3\right)e^{-x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}\text{ or }r_{2}\neq-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)e^{-x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\frac{x}{2}e^{-2x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}\text{ or }r_{2}=-2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=x\left(Ax+B\right)e^{-2x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=e^{1x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}\text{ or }r_{2}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Axe^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=3\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=A\sin x+B\cos x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=-3\cos2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=A\sin2x+B\cos2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2\cos3x-5\sin3x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=A\sin3x+B\cos3x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11a.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\sin2x+\cos3x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=-x\sin5x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)\sin5x+\left(Cx+D\right)\cos5x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\left(x-1\right)\cos\frac{x}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)\sin\frac{x}{2}+\left(Cx+D\right)\cos\frac{x}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=x\cos x+2\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)\cos x+\left(Cx+D\right)\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2e^{x}\sin2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{x}\left(A\cos2x+B\sin2x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=7e^{-3x}\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{-3x}\left(A\cos x+B\sin x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=e^{-2x}\left(5\sin3x-\cos3x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{-2x}\left(A\cos3x+B\sin3x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=7$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}\text{ or }r_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ax$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2x+3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=x^{2}+3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax^{2}+Bx+C\right)x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+21.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax^{3}+Bx^{2}+Cx+D\right)x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\left(x^{2}+2x\right)e^{3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{2}\neq3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax^{2}+Bx+C\right)e^{3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\left(1-x\right)e^{-3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{2}=-3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)e^{-3x}x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=5e^{1x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}\neq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ae^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+25.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=-3e^{2x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ax^{^{2}}e^{2x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+26.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\left(4x-3\right)e^{2x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $r_{1}=2$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)e^{2x}x^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+27.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2e^{-3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{-3x}\left(A\cos2x+B\sin2x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+28.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2e^{-3x}\cos1x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{-3x}\left(Ax\cos x+Bx\sin x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+29.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=e^{x}\left(5\cos x-3\sin x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{x}\left(A\cos x+B\sin x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=e^{-3x}\left(-\cos\pm\sin x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{-3x}\left(Ax\cos x+Bx\sin x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31=28.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=e^{-3x}\left(2\cos\left(-x\right)+3\sin\left(-x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=e^{-3x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=\sin x=\sin1x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=A\cos x+B\sin x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=-3\sin2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=Ax\cos2x+Bx\sin2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2\cos5x-2\sin5x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=A\cos5x+B\sin5x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+34.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=2x\cos2x-\sin2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax^{2}+Bx\right)\cos2x+\left(Cx^{2}+Dx\right)\sin2x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+35.
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=-3x\cos4x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\tilde{y}=\left(Ax+B\right)\cos4x+\left(Cx+D\right)\sin4x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(x)=3te^{-2t}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $Y=t(At+B)e^{2t}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+More notes
+\end_layout
+
+\begin_layout Standard
+Ratio test
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}\left(x-x_{0}\right)^{n+1}}{a_{n}\left(x-x_{0}\right)^{n}}\right|=\left|x-x_{0}\right|\lim_{n\rightarrow\infty}\left|\frac{a_{n+1}}{a_{n}}\right|=\left|x-x_{0}\right|L
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Converges if 
+\begin_inset Formula $\left|x-x_{0}\right|L<1$
+\end_inset
+
+ and diverges 
+\begin_inset Formula $\left|x-x_{0}\right|L>1$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $\left|x-x_{0}\right|L=1$
+\end_inset
+
+, the test is inconclusive.
+\end_layout
+
+\begin_layout Section*
+Series Solutions Near an Ordinary Point
+\end_layout
+
+\begin_layout Standard
+Question: how do you take the derivative of a sum? Differentiate the terms.
+ This shifts the index up by one.
+ Note Taking the derivative of a power series does not change its radius
+ of convergence.
+\end_layout
+
+\begin_layout Subsection*
+A problem
+\end_layout
+
+\begin_layout Standard
+Starting with 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(5+x^{2}\right)y''-xy'+10y=0,\quad x_{0}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Seek power series solutions of the given differential equation about the
+ given point.
+\end_layout
+
+\begin_layout Standard
+Start with the following.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=a_{0}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+\ldots=\sum_{n=0}^{\infty}a_{n}x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y'=\sum_{n=1}^{\infty}na_{n}x^{n-1}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+y''=\sum_{n=2}^{\infty}n(n-1)a_{n}x^{n-2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Directly substitute these in.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left(5+x^{2}\right)\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n-2}-x\sum_{n=1}^{\infty}na_{n}x^{n-1}+10\sum_{n=0}^{\infty}a_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Distribut the multiplication.
+ For terms involving 
+\begin_inset Formula $x$
+\end_inset
+
+, you'll find this increases the indexes.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}5n\left(n-1\right)a_{n}x^{n-2}+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n}-\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}10a_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Change indices to obtain the term 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ in each sum.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=0}^{\infty}5(n+2)\left(n+1\right)a_{n+2}\mathbf{x^{n}}+\sum_{n=2}^{\infty}n\left(n-1\right)a_{n}x^{n}-\sum_{n=1}^{\infty}na_{n}x^{n}+\sum_{n=0}^{\infty}10a_{n}x^{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Now make all the sums start in the same point.
+ Match the highest starting point, 
+\begin_inset Formula $n=2$
+\end_inset
+
+.
+ We don't want to change the 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ term, so expand the terms that drop out:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+5(0+2)\left(0+1\right)a_{2}x^{0}+5(1+2)(1+1)a_{3}x^{1}-(1)a_{1}x^{1}+10a_{0}x^{0}+10a_{1}x^{1}=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10a_{2}+30a_{3}x-a_{1}x+10a_{0}+10a_{1}x=
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+10a_{0}+9a_{1}x+10a_{2}+30a_{3}x
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And the summed terms:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{n=2}^{\infty}(5(n+2)\left(n+1\right)a_{n+2}+n\left(n-1\right)a_{n}-na_{n}+10a_{n})x^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Added together yield 0.
+\end_layout
+
+\begin_layout Standard
+Consider the terms in our summation.
+ For this equation to be satisfied for all x, the coefficient of each power
+ of 
+\begin_inset Formula $x$
+\end_inset
+
+ must be zero:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+5(n+2)(n+1)a_{n+2}+n(n-1)a_{n}-na_{n}+10a_{n}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+We want to find the 
+\series bold
+recurrence relation
+\series default
+, how to express our coefficients in terms of prior coefficients.
+ Here it means what 
+\begin_inset Formula $a_{n+2}$
+\end_inset
+
+ means in terms of 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{n+2}=-\frac{\left(n(n-1)-n+10\right)a_{n}}{5(n+2)(n+1)}=-\frac{\left(n2-2n+10\right)a_{n}}{5(n+2)(n+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notice that indices in your recurrence relation differ by two.
+ This means that to find two linearly independent solutions one will correspond
+ to odd indices and the other will correspond to even indices.
+ Let 
+\begin_inset Formula $y_{1}$
+\end_inset
+
+ be the solution corresponding to the even powers of 
+\begin_inset Formula $x$
+\end_inset
+
+ and with 
+\begin_inset Formula $a_{0}=1$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $y_{2}$
+\end_inset
+
+ be the solution corresponding to the odd powers of 
+\begin_inset Formula $x$
+\end_inset
+
+ and with 
+\begin_inset Formula $a_{1}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{1}(x)=a_{0}x^{0}+a_{2}x^{2}+a_{4}x^{4}+a_{6}x^{6}+\ldots=1-x^{2}+\frac{x^{4}}{6}-\frac{x^{6}}{50}+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y_{2}(x)=a_{1}x^{1}+a_{3}x^{3}+a_{5}x^{5}+a_{7}x^{7}+\ldots=x-\frac{3x^{3}}{10}+\frac{39x^{5}}{1000}-\frac{13x^{7}}{2800}+\ldots
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sub in 
+\begin_inset Formula $2k$
+\end_inset
+
+ and 
+\begin_inset Formula $2k+1$
+\end_inset
+
+ for the term 
+\begin_inset Formula $n$
+\end_inset
+
+ in our recurrence relation to find the even and odd terms.
+ (This allows us to find a term 
+\begin_inset Formula $(-1)^{k}$
+\end_inset
+
+ that permits alternating signs.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{2k+2}=-\frac{\left(4k^{2}-4k+10\right)a_{2k}}{5\left(2k+1\right)\left(2k+2\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+a_{2k+3}=-\frac{\left(\left(2k+1\right)k^{2}-4k+8\right)a_{2k+1}}{5\left(2k+2\right)\left(2k+3\right)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=a_{0}\sum_{k=0}^{\infty}a_{2k}x^{2k}+a_{1}\sum_{k=0}^{\infty}a_{2k+1}x^{2k+1}
+\]
+
+\end_inset
+
+Cool.
+\end_layout
+
+\begin_layout Subsection*
+phi time
+\end_layout
+
+\begin_layout Standard
+okay
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+m!a_{m}=φ^{(m)}(x_{0})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Then a0 = y0 and a1 = y′0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{x}{1}\qquad q(x)=\frac{1}{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi''(0)=2!a_{2}=-p(x_{0})a_{1}-q(x_{0})a_{0}=-0(0)-1(6)=-6
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\phi'''(0)=3!a_{3}=\text{−}2!p(x_{0})a_{2}\text{−}[p\text{′}(x_{0})+q(x_{0})]a_{1}\text{−}q\text{′}(x_{0})a_{0}=-(2)(1)(0)-(1+1)(0)-0(6)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+φ^{(4)}(x)=\text{−}[pφ''+(p'+q)φ'+q'φ]=-(p'\phi''+p\phi'''+p''\phi'+p'\phi''+q'\phi'+q\phi''+q''\phi+q'\phi') 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-(\phi(q'')+\phi'(p''+q'+q')+\phi''(p'+p'+q)+\phi'''(p))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+=-(3\phi''+x\phi''')=-3(-6)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Series Solutions Bounds
+\end_layout
+
+\begin_layout Standard
+ok
+\end_layout
+
+\begin_layout Standard
+Determine a lower bound for the radius of convergence of series solutions
+ about each given point 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ for the given differential equation.
+ (Enter 
+\begin_inset Formula $∞$
+\end_inset
+
+ if the series solutions converge everywhere.) 
+\begin_inset Formula $xy''+y=0$
+\end_inset
+
+; 
+\begin_inset Formula $x_{0}=3$
+\end_inset
+
+ lower bound for 
+\begin_inset Formula $x_{0}=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P(x)y''+Q(x)y'+R(x)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+needs to be transformed into the equation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y''+p(x)y'+q(x)y=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{Q(x)}{P(x)}\quad and\quad q(x)=\frac{R(x)}{P(x)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Formula $p(x)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{0}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The series converges everywhere, so the radius of convergence is 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+What is 
+\begin_inset Formula $q(x)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+q(x)=\frac{1}{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Where 
+\begin_inset Formula $x-x_{0}$
+\end_inset
+
+ yields 0 exists the radius of convergence, thus 4.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p_{min}=4
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Another one:
+\end_layout
+
+\begin_layout Standard
+Determine a lower bound for the radius of convergence of series solutions
+ about each given point x0 for the given differential equation.
+ (Enter ∞ if the series solutions converge everywhere.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+(1+x^{3})y''+4xy'+y=0\qquad x_{0}=0,x_{0}=3
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+So 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+p(x)=\frac{4x}{(1+x^{3})}\qquad q(x)=\frac{1}{(1+x^{3})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+And their radii at 
+\begin_inset Formula $x=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+1\qquad1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+P has zeroes at 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ and 
+\begin_inset Formula $x=\frac{1}{2}+\frac{\sqrt{3}}{2}i$
+\end_inset
+
+.
+ The distance in the complex plane is 1, and for 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ to 
+\begin_inset Formula $-1$
+\end_inset
+
+ is 
+\begin_inset Formula $1$
+\end_inset
+
+.
+ Thus the lower bound is 1.
+ For x_0=4, the distance on the complex plane is 
+\end_layout
+
+\begin_layout Standard
+If they are constants, their dradius of convergence is infinity.
+\end_layout
+
+\begin_layout Subsection*
+Elementary Laplace Transforms
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="20" columns="3">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(t)=\mathcal{L}^{-1}\left\{ F(s)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F(s)=\mathcal{L}\left\{ f(t)\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{s},\quad s>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{at}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{s-a},\quad s>a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t^{n},\quad n=\mbox{positive integer}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{n!}{s^{n+1}},\quad s>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t^{p},\quad p>-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{\Gamma(p+1)}{s^{p+1}},\quad s>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sin at$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{a}{s^{2}+a^{2}},\quad s>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cos at$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{s}{s^{2}+a^{2}},\quad s>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\sinh at$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{a}{s^{2}-a^{2}},\quad s>\left|a\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\cosh at$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{s}{s^{2}-a^{2}},\quad s>\left|a\right|$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{at}\sin bt$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{b}{(s-a)^{2}+b^{2}},\quad s>a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{at}\cos bt$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{s-a}{(s-a)^{2}+b^{2}},\quad s>a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $t^{n}e^{at},\quad n=\mbox{ positive integer}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{n!}{(s-a)^{n+1}},\quad s>a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u_{c}(t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{e^{-cs}}{s},\quad s>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $u_{c}(t)f(t-c)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{-cs}F(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{ct}f(t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F(s-c)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f(ct)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{c}F(\frac{s}{c}),\quad c>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\int_{0}^{t}f(t-\tau)g(\tau)d\tau$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F(s)G(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\delta(t-c)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $e^{-cs}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f^{(n)}(t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $s^{n}F(s)-s^{n-1}f(0)-\ldots-f^{(n-1)}(0)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(-t)^{n}f(t)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $F^{(n)}(s)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
