@@ -3,5 +3,8 @@
 \#*\#
 *.tex
 *.emergency
-build/
+build/*
+!build/*.html
+!build/*.png
+!build/*.css
 node_modules/
