@@ -27,7 +27,7 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize 12
+\paperfontsize 8
 \spacing single
 \use_hyperref false
 \papersize default
@@ -55,10 +55,10 @@
 \shortcut idx
 \color #008000
 \end_index
-\leftmargin 2cm
-\topmargin 2cm
-\rightmargin 2cm
-\bottommargin 2cm
+\leftmargin 1cm
+\topmargin 1cm
+\rightmargin 1cm
+\bottommargin 1cm
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation skip
@@ -66,7 +66,7 @@
 \quotes_language english
 \papercolumns 1
 \papersides 1
-\paperpagestyle default
+\paperpagestyle empty
 \tracking_changes false
 \output_changes false
 \html_math_output 0
@@ -77,6 +77,35 @@
 \begin_body
 
 \begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setlength{
+\backslash
+columnsep}{1cm}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{multicols}{2}{
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Note Note
 status open
 
@@ -187,7 +216,7 @@ And thus, if
 \end_layout
 
 \begin_layout Title
-Differential Equations
+Tim Ryan's DiffEQ Notes
 \end_layout
 
 \begin_layout Section
@@ -264,18 +293,231 @@ y=v(t)y_{1}(t)
 \end_inset
 
 
+\begin_inset Note Note
+status open
+
+\begin_layout Section
+Classification
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-IVP
+Integration Factor
 \end_layout
 
 \begin_layout Standard
-Okay
+Use an integration factor.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+ty'-y=t^{2}e^{-t}\qquad t>0
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Get this into the correct form (
+\begin_inset Formula $y'+y$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+t\frac{dy}{dt}-y=t^{2}e^{-t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dy}{dt}-\frac{y}{t}=te^{-t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve for 
+\begin_inset Formula $\mu\left(t\right)=\int p\left(t\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu\left(t\right)=\int-\frac{1}{t}dt=-\ln\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Thus return to our original equation and multiply through:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & e^{-\mu\left(t\right)}\left(\int e^{\mu\left(t\right)}q\left(t\right)dt+C\right)\\
+ & = & e^{\ln t}\left(\int e^{-\ln t}te^{-t}dt+C\right)\\
+ & = & t\left(\int e^{-t}dt+C\right)\\
+ & = & Ct-te^{-t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Example 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{dy}{dt}+\frac{1}{2}y=\frac{1}{2}e^{\frac{t}{3}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\mu\left(t\right)=\int\frac{1}{2}dt=\frac{1}{2}t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & e^{-\mu\left(t\right)}\left(\int e^{\mu\left(t\right)}q\left(t\right)dt+C\right)\\
+ & = & e^{-\frac{t}{2}}\left(\int e^{\frac{t}{2}}\frac{1}{2}e^{\frac{t}{3}}dt+C\right)\\
+ & = & e^{-\frac{t}{2}}\left(\frac{1}{2}\int e^{\frac{5}{6}t}+C\right)\\
+ & = & e^{-\frac{t}{2}}\left(\frac{3}{5}e^{\frac{5}{6}t}+C\right)\\
+ & = & \frac{3}{5}e^{\frac{t}{3}}+Ce^{-\frac{t}{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
-Homogeneous equations
+Separable Equations
+\end_layout
+
+\begin_layout Standard
+Separable equations.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y'=2y^{2}+xy^{2}\qquad y(0)=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{eqnarray*}
+\frac{dy}{dx} & = & 2y^{2}+xy^{2}\\
+\frac{dy}{dx} & = & y^{2}(2+x)\\
+y^{-2}dy & = & (2+x)dx
+\end{eqnarray*}
+
+\end_inset
+
+Integrate both sides.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-y^{-1}+C=2x+\frac{x^{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Solve for initial values.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\left(1\right)^{-1}+C=-1+C=2\left(0\right)+\frac{\left(0\right)^{2}}{2}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-y^{-1}+1=2x+\frac{x^{2}}{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=-\frac{1}{\frac{1}{2}x^{2}+2x-1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Homogeneous Equations
 \end_layout
 
 \begin_layout Standard
@@ -659,7 +901,8 @@ y_{2}(t)=(Ct)(t^{2})=Ct^{3}
 \end_inset
 
 
-\end_layout
+\begin_inset Note Note
+status open
 
 \begin_layout Section
 Theorem of Undetermined Coefficients
@@ -669,7 +912,7 @@ Theorem of Undetermined Coefficients
 Theorem 3.5.1
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 If 
 \begin_inset Formula $Y_{1}$
 \end_inset
@@ -696,7 +939,7 @@ If
  (2), then
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 Y_{1}\left(t\right)-Y_{2}\left(t\right)=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left(t\right)
@@ -707,7 +950,7 @@ Y_{1}\left(t\right)-Y_{2}\left(t\right)=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where 
 \begin_inset Formula $c_{1}$
 \end_inset
@@ -723,12 +966,12 @@ where
 Theorem 3.5.2
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 The general solution of the nonhomogeneous equation (1) can be written in
  the form
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula 
 \[
 y=\varPhi\left(t\right)=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left(t\right)+Y\left(t\right)
@@ -739,7 +982,7 @@ y=\varPhi\left(t\right)=c_{1}y_{1}\left(t\right)+c_{2}y_{2}\left(t\right)+Y\left
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 where 
 \begin_inset Formula $y_{1}$
 \end_inset
@@ -762,6 +1005,11 @@ where
 \end_inset
 
  is some specific solution of the nonhomogeneous equation (1).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -1148,7 +1396,7 @@ Given that
 \begin_inset Formula $\left\{ x,x^{3}\right\} $
 \end_inset
 
- is a fundamental set of solutions of:
+ is a fundamental set of solutions of the homogeneous equation:
 \end_layout
 
 \begin_layout Standard
@@ -1163,7 +1411,7 @@ x^{2}y''-3xy'+3y=0
 \end_layout
 
 \begin_layout Standard
-Find the general solution of:
+Find the general solution of the nonhomogeneous equation:
 \end_layout
 
 \begin_layout Standard
@@ -1184,7 +1432,7 @@ Find the correct form:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-y''-3y'x^{-1}+3yx^{-2}=4x^{5}
+y''+\left(-3x^{-1}\right)y'+\left(3x^{-2}\right)y=4x^{5}
 \]
 
 \end_inset
@@ -1193,7 +1441,7 @@ y''-3y'x^{-1}+3yx^{-2}=4x^{5}
 \end_layout
 
 \begin_layout Standard
-Solve the system of equations:
+Solve for this system of equations:
 \end_layout
 
 \begin_layout Standard
@@ -1351,7 +1599,7 @@ y=\frac{x^{7}}{6}+C_{1}x+C_{2}x^{3}
 
 \end_layout
 
-\begin_layout Section*
+\begin_layout Section
 Ratio Test
 \end_layout
 
@@ -1794,18 +2042,7 @@ p(x)=\frac{x}{1}\qquad q(x)=\frac{1}{1}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-φ^{(4)}(x)=\text{−}[pφ''+(p'+q)φ'+q'φ]=-(p'\phi''+p\phi'''+p''\phi'+p'\phi''+q'\phi'+q\phi''+q''\phi+q'\phi') 
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
-=-(\phi(q'')+\phi'(p''+q'+q')+\phi''(p'+p'+q)+\phi'''(p))
+φ^{(4)}(x)=-(\phi(q'')+\phi'(p''+q'+q')+\phi''(p'+p'+q)+\phi'''(p))
 \]
 
 \end_inset
@@ -1817,16 +2054,6 @@ p(x)=\frac{x}{1}\qquad q(x)=\frac{1}{1}
 \begin_inset Formula 
 \[
 =-(3\phi''+x\phi''')=-3(-6)
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula 
-\[
 \]
 
 \end_inset
@@ -2756,15 +2983,7 @@ Non-homogeneous Systems
 
 \begin_layout Standard
 Almost the same.
-\end_layout
-
-\begin_layout Standard
-We have a complicated 
-\begin_inset Formula $x'$
-\end_inset
-
- differential.
- Plug into (*) and see what we get (cry)
+ Solve for partial differential.
 \end_layout
 
 \begin_layout Subsection
@@ -3114,6 +3333,22 @@ x'=e^{t}\left(C_{1}+C_{2}+C_{2}t\right)
 
 \begin_layout Standard
 Now working with a nonhomogeneous solution
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\backslash
+end{multicols}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -5705,6 +5940,13 @@ Elementary Laplace Transforms
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Test Questions
 \end_layout
@@ -5727,12 +5969,105 @@ y'=2y^{2}+xy^{2}\qquad y(0)=1
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+This becomes a separable equation.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 2.
  Solve: 
 \begin_inset Formula 
 \[
 ty'-y=t^{2}e^{-t}\qquad t>0
 \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Use an integration factor.
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+t\frac{dy}{dt}-y=t^{2}e^{-t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Get this into the correct form (
+\begin_inset Formula $y'+y$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\frac{dy}{dt}-\frac{y}{t}=te^{-t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Solve for 
+\begin_inset Formula $\mu\left(t\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\[
+\mu\left(t\right)=\int-\frac{1}{t}dt=-\ln\left(t\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Thus return to our original equation and multiply through:
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Formula 
+\begin{eqnarray*}
+y & = & e^{-\mu\left(t\right)}\left(\int e^{\mu\left(t\right)}te^{-t}dt+C\right)\\
+ & = & e^{\ln t}\left(\int e^{-\ln t}te^{-t}dt+C\right)\\
+ & = & t\left(\int e^{-t}dt+C\right)\\
+ & = & Ct-te^{-t}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -5914,6 +6249,33 @@ c)
 
  .
  Use the method of reduction of order to find a second solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Part*
+Final
+\end_layout
+
+\begin_layout Plain Layout
+FOCUS: Variation of parameters in solving *general* and *particular* solutions.
+\end_layout
+
+\begin_layout Plain Layout
+FOCUS: Align steps for systems of diffeq with the homework, since it's written
+ better there.
+ Use example?
+\end_layout
+
+\begin_layout Plain Layout
+FOCUS: Last test is confusing, what are the steps there
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

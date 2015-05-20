@@ -4,3 +4,4 @@
 *.tex
 *.emergency
 build/
+node_modules/

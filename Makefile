@@ -9,6 +9,7 @@ build:
 	mkdir -p build
 
 build/diffeq.html: diffeq.lyx
-	/Applications/LyX.app/Contents/MacOS/lyx --export pdflatex diffeq.lyx
-	mv diffeq.tex build
-	cd build; yes "" | htlatex diffeq.tex "../html.cfg, charset=utf-8" " -cunihtf -utf8"
+	npm install
+	cd build; cp ../*.lyx ../*.png .
+	cd build; /Applications/LyX.app/Contents/MacOS/lyx --export xhtml ./diffeq.lyx
+	cd build; node -p "'<!DOCTYPE html>\n<html>' + require('cheerio').load(require('fs').readFileSync('./diffeq.xhtml'))('html').html() + '</html>'" > diffeq.html
