@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
+
+html, body {
+	background: #ddd;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arvo, sans-serif;
+	width: 44em;
+	margin: 3em auto;
+	padding: 3em 2em;
+	background: white;
+}
+
+table {
+	border-collapse: collapse;
+}
